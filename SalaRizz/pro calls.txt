@@ -1,0 +1,4 @@
+CALL CalculateTotalWorkHoursWithOvertime(employeeID, month, year, @totalHours, @overtimeHours);
+SELECT @totalHours AS Total_Work_Hours, @overtimeHours AS Overtime_Hours;
+
+CALL AddDeductionToPaycheck(employeeID, 'Health insurance', 100.00);
